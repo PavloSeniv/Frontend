@@ -3,16 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Біографія</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        a#back {
+            font-style: italic;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        div a:link {
+            background-color: #0000ff;
+            color: #ffff00;
+            display: block;
+            width: 200px;
+            text-align: center;
+        }
+
+        div a:hover {
+            background-color: #ff00ff;
+            color: #00ff00;
+        }
+
+        div a:visited {
+            background-color: #ffff00;
+            color: #ff0024;
+        }
+
+        p {
+            font-size: 120%;
+        }
+
+        article {
+            font-size: 120%;
+            /* Доробити* Для тексту розділів сторінки зробити загальне збільшення шрифту
+           на 20%, а для заголовків – ще додатково на 20% (до вже наявних).*/
+        }
+
+        article#start > p {
+            background-color: #008000;
+            color: #ff00ff;
+        }
+
+        article#kids > p {
+            background-color: #0000ff;
+            color: #ffff00;
+        }
+
+        article#school > p {
+            background-color: #ffff00;
+            color: #ff0000;
+        }
+
+        article#school1 > p {
+            background-color: #a52a2a;
+            color: #ffebcd;
+        }
+
+        article#universaty > p {
+            background-color: #c0c0c0;
+            color: #00008b;
+        }
+
+        article > a {
+            font-weight: 600; /*Напівжирний*/
+        }
+
+        .Up {
+            text-transform: uppercase;
+        }
+
+    </style>
 </head>
 <body>
 <h1 id="H1">Автобіографія Сеніва Павла Васильовича</h1>
-<a href="index.html">Назад на головну</a><br>
+<a id="back" href="index.html">Назад на головну</a><br>
 <h3 id="H3">Зміст</h3>
-<a href="biography.html#start"> Базова інформація </a><br>
-<a href="biography.html#kids"> Дитинство </a><br>
-<a href="biography.html#school"> Шкільні роки </a><br>
-<a href="biography.html#school1"> Поза школою </a><br>
-<a href="biography.html#universaty"> Університет </a><br>
+<div>
+    <a href="biography.html#start"> Базова інформація </a><br>
+    <a href="biography.html#kids"> Дитинство </a><br>
+    <a href="biography.html#school"> Шкільні роки </a><br>
+    <a href="biography.html#school1"> Поза школою </a><br>
+    <a href="biography.html#universaty"> Університет </a><br>
+</div>
 <br>
 <article id="start">
     Базова інформація
@@ -65,8 +143,8 @@
 
     </p>
     <a href="biography.html#H3"> до змісту </a>
-    <hr>
-    <a href="biography.html#H1"> Уверх </a>
 </article>
+<hr>
+<a class="Up" href="biography.html#H1"> Уверх </a>
 </body>
 </html>

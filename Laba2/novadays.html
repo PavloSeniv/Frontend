@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Сьогодення</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        #back {
+            font-style: italic;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #808080;
+            color: #a52a2a;
+        }
+
+        ol li:nth-child(3):hover {
+            background-color: #ff0000;
+            cursor: pointer;
+        }
+
+        ol li:nth-child(5):hover {
+            background-color: #0000ff;
+            cursor: pointer;
+        }
+
+        ol li:nth-child(4) {
+            background-color: #1aff00;
+        }
+    </style>
 </head>
 <body>
 <h1>Сьогодення Сеніва Павла Васильовича</h1>
-<a href="index.html">Назад на головну</a>
+<a id="back" href="index.html">Назад на головну</a>
 <h2>Мій типовий список покупок</h2>
 <ul>
     <li>Молочні продукти:
@@ -58,7 +91,6 @@
 
     <li>Хліб</li>
 </ul>
-
 <h2>Мій улюблений десерт - Медовик</h2>
 <ol>
     <li>Отже, на першому етапі приготування ми замісимо коржі для нашого Медовика. Для цього в сотейник
