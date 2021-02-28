@@ -1,6 +1,5 @@
-
-body {
-    margin: 25px;
+* {
+    box-sizing: border-box;
 }
 
 .row {
@@ -9,6 +8,10 @@ body {
 
 h1 {
     text-align: center;
+}
+
+.row div {
+    background-color: grey;
 }
 
 h3 {
@@ -22,15 +25,6 @@ h3 {
 
 }
 
-div {
-    background-color: grey;
-    margin: 20px;
-
-}
-
-p{
-
-}
 #Row1 {
     background-color: pink;
 
@@ -44,12 +38,21 @@ p{
     background-color: burlywood;
 }
 
+
 /* Large devices */
 @media (min-width: 992px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8,
     .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left;
-        border: 1px solid green;
+
+        height: 150px;
+        border: 2px solid green;
+
+    }
+
+    #div2 {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .col-lg-1 {
@@ -65,7 +68,8 @@ p{
     }
 
     .col-lg-4 {
-        width: 33.33%;
+        width: 32%;
+
     }
 
     .col-lg-5 {
@@ -106,7 +110,17 @@ p{
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8,
     .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
+        height: 150px;
         border: 2px solid blue;
+    }
+
+    #div1 {
+        margin-right: 5px;
+    }
+
+    #div2 {
+        margin-left: 5px;
+        margin-bottom: 10px;
     }
 
     .col-md-1 {
@@ -130,7 +144,8 @@ p{
     }
 
     .col-md-6 {
-        width: 50%;
+        width: 49%;
+
     }
 
     .col-md-7 {
@@ -164,6 +179,8 @@ p{
     .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
         float: left;
         border: 3px solid yellow;
+        height: 150px;
+        margin-bottom: 10px;
     }
 
     .col-sd-1 {
@@ -180,6 +197,7 @@ p{
 
     .col-sd-4 {
         width: 33.33%;
+
     }
 
     .col-sd-5 {
