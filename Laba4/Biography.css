@@ -37,31 +37,6 @@ h4 {
     font-size: 140%;
 }
 
-/*#start > p {
-    background-color: #00FF92;
-    color: #FF4900;
-}
-
-#kids > p {
-    background-color: #0000ff;
-    color: #ffff00;
-}
-
-#school > p {
-    background-color: #ffff00;
-    color: #ff0000;
-}
-
-#school1 > p {
-    background-color: #a52a2a;
-    color: #ffebcd;
-}
-
-#universaty > p {
-    background-color: #c0c0c0;
-    color: #00008b;
-}*/
-
 article > a {
     font-weight: 600; /*Напівжирний*/
 }
@@ -72,36 +47,44 @@ article > a {
 
 .content1 {
     border: solid 1px black;
-    padding: 0 10px 10px 10px;
+    padding: 40px 10px 10px 10px;
 }
 
 #start0 {
     background-color: #00FF92;
     color: #FF4900;
+    margin-bottom: 20px;
 }
 
 #kids0 {
     background-color: #0000ff;
     color: #ffff00;
     float: right;
+    margin-bottom: 20px;
+
 }
 
 #school0 {
     background-color: #ffff00;
     color: #ff0000;
+    margin-bottom: 20px;
 }
 
 #school10 {
     background-color: #a52a2a;
     color: #ffebcd;
     float: right;
+    margin-bottom: 20px;
+
 }
 
 #universaty0 {
     background-color: #c0c0c0;
     color: #00008b;
+    margin-bottom: 20px;
+
 }
-.content1{
-    height: 350px;
+
+.content1 {
+    height: 450px;
 }
-/*Доробити*/
