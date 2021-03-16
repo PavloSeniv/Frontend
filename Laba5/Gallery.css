@@ -1,0 +1,45 @@
+*{
+    font-family: 'Syne Mono', monospace;
+}
+h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#back {
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+}
+
+#photo1 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    height: 45px;
+}
+
+#photo2 {
+    text-align: center;
+    font-size: 1.8em;
+    height: 45px;
+}
+
+#photo3 {
+    text-align: center;
+    font-size: 2.1em;
+    height: 45px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 480px;
+
+}
+
+h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,48 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+
+}
+
+p {
+    font-size: 120%;
+}
+
+a:link#bio {
+    color: #f10202;
+}
+
+a:visited#bio {
+    color: #008000;
+}
+
+a:link#day {
+    color: #ffbf00;
+}
+
+a:visited#day {
+    color: #0000ff;
+}
+
+a:link#friend {
+    color: #0ac2ff;
+}
+
+a:visited#friend {
+    color: #ff8300;
+}
+
+a:link#gallery {
+    color: #64ff00;
+}
+
+a:visited#gallery {
+    color: #ff0040;
+}
+
+a {
+    text-align: center;
+}

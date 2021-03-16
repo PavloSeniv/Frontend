@@ -1,0 +1,39 @@
+*{
+    font-family: 'Akaya Telivigala', cursive;
+}
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+#back {
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul li:nth-child(odd) {
+    background-color: #ffffff;
+    color: #9b2c00;
+}
+
+ul li:nth-child(even) {
+    background-color: #808080;
+    color: #0c116c;
+}
+
+ol li:nth-child(3):hover {
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+ol li:nth-child(5):hover {
+    background-color: #0000ff;
+    cursor: pointer;
+}
+
+ol li:nth-child(4) {
+    background-color: #1aff00;
+}

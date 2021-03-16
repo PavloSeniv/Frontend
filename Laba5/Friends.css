@@ -1,0 +1,135 @@
+*{
+    font-family: 'DotGothic16', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+#back {
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+}
+
+tr:nth-child(1) {
+    text-align: center;
+    background-color: #22c313;
+    color: #ea1721;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #808080;
+    color: #0c116c;
+}
+
+th {
+    padding: 5px;
+    border: 3px solid #ff0000;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #0c116c;
+}
+
+caption {
+    font-size: 20px;
+}
+
+table {
+    border: 3px solid #000000;
+}
+
+td:nth-child(5) {
+    text-align: right;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .col-xl-12 {
+        float: left;
+        width: 100%;
+    }
+
+    th {
+        font-size: 130%;
+    }
+
+    td {
+        font-size: 120%;
+    }
+}
+
+/* Large devices */
+@media (min-width: 993px) {
+    .col-lg-12 {
+        float: left;
+        width: 100%;
+    }
+
+    th {
+        font-size: 130%;
+    }
+
+    td {
+        font-size: 120%;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .col-md-12 {
+        float: left;
+        width: 100%;
+    }
+
+    th {
+        font-size: 120%;
+    }
+
+    td {
+        font-size: 110%;
+    }
+}
+
+/* Small devices */
+@media (max-width: 768px) {
+
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+
+    }
+
+    th {
+        font-size: 110%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .col-12 {
+        float: left;
+        width: 100%;
+
+    }
+
+    th {
+        font-size: 110%;
+    }
+
+}
