@@ -53,6 +53,8 @@ article > a {
 .content1 {
     border: solid 1px black;
     padding: 40px 10px 10px 10px;
+    height: 500px;
+
 }
 
 #start0 {

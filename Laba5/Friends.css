@@ -1,6 +1,7 @@
-*{
+* {
     font-family: 'DotGothic16', sans-serif;
 }
+
 h1 {
     text-align: center;
     font-size: 22px;
@@ -64,11 +65,11 @@ td:nth-child(5) {
     }
 
     th {
-        font-size: 130%;
+        font-size: 160%;
     }
 
     td {
-        font-size: 120%;
+        font-size: 140%;
     }
 }
 
@@ -129,7 +130,7 @@ td:nth-child(5) {
     }
 
     th {
-        font-size: 110%;
+        font-size: 100%;
     }
 
 }
