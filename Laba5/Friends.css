@@ -40,6 +40,7 @@ td {
 
 caption {
     font-size: 20px;
+    text-align: center;
 }
 
 table {
@@ -59,10 +60,6 @@ td:nth-child(5) {
 }
 
 @media (min-width: 1200px) {
-    .col-xl-12 {
-        float: left;
-        width: 100%;
-    }
 
     th {
         font-size: 160%;
@@ -75,10 +72,6 @@ td:nth-child(5) {
 
 /* Large devices */
 @media (min-width: 993px) {
-    .col-lg-12 {
-        float: left;
-        width: 100%;
-    }
 
     th {
         font-size: 130%;
@@ -92,10 +85,6 @@ td:nth-child(5) {
 /* Medium devices */
 @media (min-width: 769px) and (max-width: 992px) {
 
-    .col-md-12 {
-        float: left;
-        width: 100%;
-    }
 
     th {
         font-size: 120%;
@@ -109,11 +98,6 @@ td:nth-child(5) {
 /* Small devices */
 @media (max-width: 768px) {
 
-    .col-sm-12 {
-        float: left;
-        width: 100%;
-
-    }
 
     th {
         font-size: 110%;
@@ -123,14 +107,12 @@ td:nth-child(5) {
 
 @media (max-width: 576px) {
 
-    .col-12 {
-        float: left;
-        width: 100%;
-
-    }
-
     th {
         font-size: 100%;
     }
 
+}
+
+table {
+    caption-side: top;
 }
