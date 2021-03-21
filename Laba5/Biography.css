@@ -61,12 +61,14 @@ article > a {
     background-color: #00FF92;
     color: #FF4900;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #kids0 {
     background-color: #0000ff;
     color: #ffff00;
     margin-bottom: 20px;
+    margin-top: 20px;
 
 }
 
@@ -74,18 +76,24 @@ article > a {
     background-color: #ffff00;
     color: #ff0000;
     margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
 #school10 {
     background-color: #a52a2a;
     color: #ffebcd;
     margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
 #universaty0 {
     background-color: #c0c0c0;
     color: #00008b;
     margin-bottom: 20px;
+    margin-top: 20px;
+
 
 }
 
