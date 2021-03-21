@@ -11,20 +11,31 @@ h3 {
     text-align: center;
 }
 
-.content a:link {
-    background-color: #0000ff;
-    color: #ffff00;
+.content {
+    padding: 0 0 0 10px;
+
+}
+
+.content a {
     display: block;
     width: 200px;
     text-align: center;
 }
 
-.content a:hover {
-    background-color: #ff00ff;
-    color: #d3ff00;
+.content a:link {
+    background-color: #0000ff;
 }
 
 .content a:visited {
+    color: #ffff00;
+}
+
+.content a:hover {
+    background-color: #ff00ff;
+    color: #ffff00;
+}
+
+.content a:active {
     background-color: #ffff00;
     color: #ff0024;
 }
@@ -55,36 +66,50 @@ article > a {
 #start0 {
     background-color: #00FF92;
     color: #FF4900;
-    margin-bottom: 20px;
 }
 
 #kids0 {
     background-color: #0000ff;
     color: #ffff00;
-    margin-bottom: 20px;
 
 }
 
 #school0 {
     background-color: #ffff00;
     color: #ff0000;
-    margin-bottom: 20px;
 }
 
 #school10 {
     background-color: #a52a2a;
     color: #ffebcd;
-    margin-bottom: 20px;
 
 }
 
 #universaty0 {
     background-color: #c0c0c0;
     color: #00008b;
-    margin-bottom: 20px;
-
 }
-HR {
-    width: 100%;
-    height: 1px;
+
+@media (min-width: 993px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8,
+    .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        padding: 0 12px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8,
+    .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        padding: 0 12px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
+    .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        padding: 0 12px;
+        margin-bottom: 20px;
+    }
 }
