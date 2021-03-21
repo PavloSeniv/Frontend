@@ -21,7 +21,8 @@ h3 {
     text-align: center;
 }
 
-.content a:link {
+.content a:any-link {
+    color: #ffff00;
     background-color: #0000ff;
 }
 
