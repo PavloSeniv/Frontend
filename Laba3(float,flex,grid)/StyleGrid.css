@@ -2,45 +2,55 @@ h1 {
     text-align: center;
 }
 
+.row {
+    display: grid;
+}
+
 .content {
     background-color: #808080;
     height: 170px;
+    margin: 0 10px 20px 10px;
     position: relative; /* 1 */
 }
 
 /* Large devices */
 @media (min-width: 993px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8,
-    .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-        padding: 10px;
-    }
 
     .content {
         border: 3px solid #008000;
+    }
+
+    .row {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 /* Medium devices */
 @media (min-width: 769px) and (max-width: 992px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8,
-    .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-        padding: 10px;
-    }
 
     .content {
-        border: 3px solid #0000ff;
+        border: 3px solid #051d94;
+    }
+
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #Grid3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
 
 /* Small devices */
 @media (max-width: 768px) {
-    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
-    .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-        padding: 10px;
-    }
 
     .content {
-        border: 3px solid #ffff00;
+        border: 3px solid #dbbf0c;
+    }
+
+    .row {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -54,7 +64,6 @@ h3 {
 
 #Row1 {
     background-color: #ffc0cb;
-
 }
 
 #Row2 {
@@ -65,7 +74,7 @@ h3 {
     background-color: #deb887;
 }
 
-.content p {
+div p {
     padding: 0 10px 0 10px;
     position: absolute; /*2*/
     top: 50%; /*3*/
@@ -90,4 +99,3 @@ a:visited {
     color: yellow;
     background-color: blue;
 }
-
