@@ -15,20 +15,26 @@ h3 {
     text-align: center;
 }
 
-.content a:link {
-    background-color: #0000ff;
-    color: #ffff00;
+.content a {
     display: block;
     width: 200px;
     text-align: center;
 }
 
-.content a:hover {
-    background-color: #ff00ff;
-    color: #d3ff00;
+.content a:link {
+    background-color: #0000ff;
 }
 
 .content a:visited {
+    color: #ffff00;
+}
+
+.content a:hover {
+    background-color: #ff00ff;
+    color: #ffff00;
+}
+
+.content a:active {
     background-color: #ffff00;
     color: #ff0024;
 }
@@ -54,49 +60,66 @@ article > a {
     border: solid 1px black;
     padding: 40px 10px 10px 10px;
     height: 500px;
-
 }
 
 #start0 {
     background-color: #00FF92;
     color: #FF4900;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 #kids0 {
     background-color: #0000ff;
     color: #ffff00;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
 }
 
 #school0 {
     background-color: #ffff00;
     color: #ff0000;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
 }
 
 #school10 {
     background-color: #a52a2a;
     color: #ffebcd;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
 }
 
-#universaty0 {
+#university0 {
     background-color: #c0c0c0;
     color: #00008b;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
-
 }
 
 .row {
     justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+    .col-xl-2 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Large devices */
+@media (min-width: 993px) {
+    .col-lg-4 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 769px) and (max-width: 992px) {
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices */
+@media (max-width: 768px) {
+    .col-sm-12 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-12 {
+        margin-bottom: 20px;
+    }
 }

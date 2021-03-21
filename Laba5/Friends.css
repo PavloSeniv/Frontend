@@ -51,13 +51,6 @@ td:nth-child(5) {
     text-align: right;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-.row {
-    width: 100%;
-}
 
 @media (min-width: 1200px) {
 
