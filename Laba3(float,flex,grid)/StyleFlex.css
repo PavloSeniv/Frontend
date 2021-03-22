@@ -12,6 +12,16 @@ h1 {
     height: 170px;
     margin: 0 10px 20px 10px;
     position: relative; /* 1 */
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+div h3 {
+    margin: auto;
+    width: 4em;
+    text-align: center;
+    border: 1px solid black;
 
 }
 
@@ -48,6 +58,7 @@ h1 {
     }
 }
 
+/*
 h3 {
     margin-top: auto;
     margin-left: auto;
@@ -55,6 +66,7 @@ h3 {
     text-align: center;
     border: 1px solid black;
 }
+*/
 
 #Row1 {
     background-color: #ffc0cb;

@@ -97,11 +97,8 @@ a:visited {
     background-color: blue;
 }
 
-h3 {
+div h3 {
     margin: auto;
-}
-
-.content h3 {
     position: absolute; /*Абсолютне позицінування*/
     top: 0;
     right: 0;
