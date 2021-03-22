@@ -47,13 +47,16 @@ h1 {
     }
 }
 
-h3 {
+/*h3 {
     margin-top: auto;
     margin-left: auto;
     width: 4em;
     text-align: center;
     border: 1px solid black;
 }
+Задання без позицінування
+*/
+
 
 #Row1 {
     background-color: #ffc0cb;
@@ -94,3 +97,15 @@ a:visited {
     background-color: blue;
 }
 
+h3 {
+    margin: auto;
+}
+
+.content h3 {
+    position: absolute; /*Абсолютне позицінування*/
+    top: 0;
+    right: 0;
+    width: 4em;
+    border: 1px solid black;
+    text-align: center;
+}
