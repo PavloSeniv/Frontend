@@ -42,6 +42,7 @@ h3 {
 
 p {
     font-size: 120%;
+
 }
 
 h4 {
@@ -88,14 +89,16 @@ article > a {
     color: #00008b;
 }
 
-.row {
-    justify-content: space-between;
-}
 
 @media (min-width: 1200px) {
     .col-xl-2 {
         margin-bottom: 20px;
     }
+
+    .row {
+        justify-content: space-between;
+    }
+
 }
 
 /* Large devices */
