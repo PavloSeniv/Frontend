@@ -1,3 +1,14 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
 .text-justify {
     text-align: justify;
 }
+ .end-5{
+     right: 5px;
+ }
+
+ ul a:hover{
+     background-color: #ca0a37;
+ }

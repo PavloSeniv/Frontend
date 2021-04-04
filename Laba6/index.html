@@ -7,40 +7,38 @@
     <link href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
 
-    <nav class="navbar navbar-expand-md navbar-light bg-danger border border-top-0  border-2 border-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand fs-2 ">Company, LLC</a>
-            <form class="d-flex">
-                <button class="navbar-toggler  border border-dark " type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </form>
+    <nav class="navbar navbar-light bg-danger border border-top-0  border-2 border-dark p-0">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand fs-2 p-2"><b>Company, LLC</b></a>
+            <button class="navbar-toggler d-sm-block d-md-none border border-2 border-dark  position-relative end-5 "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-md-none" id="navbarToggler">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item border border-top border-start-0 border-end-0 border-bottom-0 border-2 border-dark">
+                        <a class="nav-link fs-4 text-dark" href="#Caption 1">Caption 1</a>
+                    </li> .
+                    <li class="nav-item  border border-top border-start-0 border-end-0 border-bottom-0 border-2 border-dark">
+                        <a class="nav-link fs-4 text-dark" href="#Caption 2">Caption 2</a>
+                    </li>
+                    <li class="nav-item  border border-top border-start-0 border-end-0 border-bottom-0 border-2 border-dark">
+                        <a class="nav-link fs-4 text-dark" href="#Caption 3">Caption 3 </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-danger p-4 text-center border border-top-0  border-2 border-dark">
-            <a class=" fs-4 text-dark text-decoration-none" href="#Caption 1">Caption 1</a>
-        </div>
-
-        <div class="bg-danger p-4 text-center border border-top-0 border-2 border-dark">
-            <a class="fs-4 text-dark text-decoration-none" href="#Caption 2 ">Caption 2</a>
-        </div>
-
-        <div class="bg-danger p-4 text-center border border-top-0 border-2 border-dark">
-            <a class="fs-4 text-dark text-decoration-none" href="#Caption 3">Caption 3 </a>
-        </div>
-
-    </div>
-
-    <h1 class="text-center p-2" id="Main">Main caption</h1>
+    <h1 class="text-center p-4" id="Main">Main caption</h1>
 
     <div class="row">
 
