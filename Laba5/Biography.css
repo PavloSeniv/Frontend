@@ -102,27 +102,27 @@ article > a {
 }
 
 /* Large devices */
-@media (min-width: 993px) {
+@media (min-width: 992px) and (max-width: 1999px) {
     .col-lg-4 {
         margin-bottom: 20px;
     }
 }
 
 /* Medium devices */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .col-md-6 {
         margin-bottom: 20px;
     }
 }
 
 /* Small devices */
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
     .col-sm-12 {
         margin-bottom: 20px;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .col-12 {
         margin-bottom: 20px;
     }
