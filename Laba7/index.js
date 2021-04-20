@@ -91,6 +91,8 @@ function triangle(value_1, type_1, value_2, type_2) {
         console.log("beta = " + beta);
         console.log('"success"');
         console.log("");
+    } else if (type_1 != "leg" || type_1 != "hypotenuse" || type_1 != "adjacent angle" || type_1 != "opposite angle" || type_1 != "angle" || type_2 != "leg" || type_2 != "hypotenuse" || type_2 != "adjacent angle" || type_2 != "opposite angle" || type_2 != "angle") {
+        console.log("failed");
     }
 }
 
