@@ -64,7 +64,7 @@ td:nth-child(5) {
 }
 
 /* Large devices */
-@media (min-width: 993px) {
+@media (min-width: 992px) and (max-width: 1999px) {
 
     th {
         font-size: 130%;
@@ -76,7 +76,7 @@ td:nth-child(5) {
 }
 
 /* Medium devices */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
 
     th {
@@ -89,7 +89,7 @@ td:nth-child(5) {
 }
 
 /* Small devices */
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
 
 
     th {
@@ -98,7 +98,7 @@ td:nth-child(5) {
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 
     th {
         font-size: 100%;
