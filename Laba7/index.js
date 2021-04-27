@@ -77,6 +77,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         c = b / Math.sin(degrees_to_radians(beta));
         a = Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2));
         alpha = 90 - beta;
+        console.log('%cКатет b та протилежний кут beta', "color:deeppink;");
         console_result(a, b, c, alpha, beta);
     } else if (type_1 === "leg_a" && type_2 === "opposite angle") {
         a = value_1;
