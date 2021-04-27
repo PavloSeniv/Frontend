@@ -18,6 +18,16 @@ function degrees_to_radians(degrees) {
     return degrees * (Math.PI / 180);
 }
 
+function console_result(a, b, c, alpha, beta) {
+    console.log("a = " + a);
+    console.log("b = " + b);
+    console.log("c = " + c);
+    console.log("alpha = " + alpha);
+    console.log("beta = " + beta);
+    console.log('%c"success"', "color:green;");
+    console.log("%c--------------------------", "color:yellow;");
+}
+
 function triangle(value_1, type_1, value_2, type_2) {
     let a, b, c, alpha, beta;
 
@@ -28,13 +38,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         alpha = radian_to_degrees(Math.atan(a / b));
         beta = radian_to_degrees(Math.atan(b / a));
         console.log('%cДва катети', "color:deeppink;");
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
-        console.log("alpha = " + alpha);
-        console.log("beta = " + beta);
-        console.log('%c"success"', "color:green;");
-        console.log("%c--------------------------", "color:yellow;");
+        console_result(a, b, c, alpha, beta);
     } else if (type_1 === "leg_b" && type_2 === "hypotenuse") {
         b = value_1;
         c = value_2;
@@ -42,13 +46,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         alpha = radian_to_degrees(Math.atan(a / b));
         beta = radian_to_degrees(Math.atan(b / a));
         console.log('%cКатет b та гіпотенуза', "color:deeppink;");
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
-        console.log("alpha = " + alpha);
-        console.log("beta = " + beta);
-        console.log('%c"success"', "color:green;");
-        console.log("%c--------------------------", "color:yellow;");
+        console_result(a, b, c, alpha, beta);
     } else if (type_1 === "leg_a" && type_2 === "hypotenuse") {
         a = value_1;
         c = value_2;
@@ -56,13 +54,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         alpha = radian_to_degrees(Math.atan(a / b));
         beta = radian_to_degrees(Math.atan(b / a));
         console.log('%cКатет a та гіпотенуза', "color:deeppink;");
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
-        console.log("alpha = " + alpha);
-        console.log("beta = " + beta);
-        console.log('%c"success"', "color:green;");
-        console.log("%c--------------------------", "color:yellow;");
+        console_result(a, b, c, alpha, beta);
     } else if (type_1 === "leg_b" && type_2 === "adjacent angle") {
         b = value_1;
         alpha = value_2;
@@ -70,13 +62,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         a = b * Math.tan(degrees_to_radians(alpha));
         beta = 90 - alpha;
         console.log('%cКатет b та прилеглий кут alpha', "color:deeppink;");
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
-        console.log("alpha = " + alpha);
-        console.log("beta = " + beta);
-        console.log('%c"success"', "color:green;");
-        console.log("%c--------------------------", "color:yellow;");
+        console_result(a, b, c, alpha, beta);
     } else if (type_1 === "leg_a" && type_2 === "adjacent angle") {
         a = value_1;
         beta = value_2;
@@ -84,27 +70,14 @@ function triangle(value_1, type_1, value_2, type_2) {
         b = a * Math.tan(degrees_to_radians(beta));
         alpha = 90 - beta;
         console.log('%cКатет a та прилеглий кут beta', "color:deeppink;");
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
-        console.log("alpha = " + alpha);
-        console.log("beta = " + beta);
-        console.log('%c"success"', "color:green;");
-        console.log("%c--------------------------", "color:yellow;");
+        console_result(a, b, c, alpha, beta);
     } else if (type_1 === "leg_b" && type_2 === "opposite angle") {
         b = value_1;
         beta = value_2;
         c = b / Math.sin(degrees_to_radians(beta));
         a = Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2));
         alpha = 90 - beta;
-        console.log('%cКатет b та протилежний кут beta', "color:deeppink;");
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
-        console.log("alpha = " + alpha);
-        console.log("beta = " + beta);
-        console.log('%c"success"', "color:green;");
-        console.log("%c--------------------------", "color:yellow;");
+        console_result(a, b, c, alpha, beta);
     } else if (type_1 === "leg_a" && type_2 === "opposite angle") {
         a = value_1;
         alpha = value_2;
@@ -112,13 +85,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         b = Math.sqrt(Math.pow(c, 2) - Math.pow(a, 2));
         beta = 90 - alpha;
         console.log('%cКатет a та протилежний кут alpha', "color:deeppink;");
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
-        console.log("alpha = " + alpha);
-        console.log("beta = " + beta);
-        console.log('%c"success"', "color:green;");
-        console.log("%c--------------------------", "color:yellow;");
+        console_result(a, b, c, alpha, beta);
     } else if (type_1 === "hypotenuse" && type_2 === "angle_beta") {
         c = value_1;
         beta = value_2;
@@ -126,13 +93,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         a = c * Math.cos(degrees_to_radians(beta));
         b = c * Math.sin(degrees_to_radians(beta));
         console.log('%cГіпотенуза та кут beta', "color:deeppink;");
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
-        console.log("alpha = " + alpha);
-        console.log("beta = " + beta);
-        console.log('%c"success"', "color:green;");
-        console.log("%c--------------------------", "color:yellow;");
+        console_result(a, b, c, alpha, beta);
     } else if (type_1 === "hypotenuse" && type_2 === "angle_alpha") {
         c = value_1;
         alpha = value_2;
@@ -140,13 +101,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         a = c * Math.cos(degrees_to_radians(alpha));
         b = c * Math.sin(degrees_to_radians(alpha));
         console.log('%cГіпотенуза та кут alpha', "color:deeppink;");
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
-        console.log("alpha = " + alpha);
-        console.log("beta = " + beta);
-        console.log('%c"success"', "color:green;");
-        console.log("%c--------------------------", "color:yellow;");
+        console_result(a, b, c, alpha, beta);
     } else if (value_1 <= 0 || value_2 <= 0) {
         console.log('%c"Zero or negative input"', "color:aqua;");
         console.log("%c--------------------------", "color:yellow;");
