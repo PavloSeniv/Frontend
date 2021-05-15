@@ -5,7 +5,7 @@ function info() {
     console.log("hypotenuse - гіпотенуза");
     console.log("adjacent angle  - прилеглий до катета кут");
     console.log("opposite angle  - протилежний до катета кут");
-    console.log("angle - один з двох гострих кутів(коли задана гіпотенуза");
+    console.log("angle - один з двох гострих кутів(коли задана гіпотенуза)");
     console.log("%c----------------------------------------------------------", "color:magenta;");
 }
 
@@ -42,7 +42,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 === "leg" && type_2 === "hypotenuse") {
         if (value_1 > value_2) {
-            console.log("%cКатет більший за гіпотенузу", "color:red;")
+            console.log('%c"failed " - Катет більший за гіпотенузу', "color:red;");
         } else {
             b = value_1;
             {
@@ -66,7 +66,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 === "leg" && type_2 === "adjacent angle") {
         if (value_2 >= 90) {
-            console.log("%cНегострі кути", "color:red;")
+            console.log('%c"failed " - Негострий кут', "color:red;");
         } else {
             b = value_1;
             {
@@ -90,7 +90,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 === "leg" && type_2 === "opposite angle") {
         if (value_2 >= 90) {
-            console.log("%cНегострі кути", "color:red;")
+            console.log('%c"failed " - Негострий кут', "color:red;");
         } else {
             b = value_1;
             {
@@ -114,7 +114,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 === "hypotenuse" && type_2 === "angle") {
         if (value_2 >= 90) {
-            console.log("%cНегострі кути", "color:red;")
+            console.log('%c"failed " - Негострий кут', "color:red;");
         } else {
             beta = value_2;
             {
@@ -139,7 +139,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 !== "leg" || type_1 !== "hypotenuse" || type_1 !== "adjacent angle" || type_1 !== "opposite angle" || type_1 !== "angle" ||
         type_2 !== "leg" || type_2 !== "hypotenuse" || type_2 !== "adjacent angle" || type_2 !== "opposite angle" || type_2 !== "angle") {
-        console.log('%c"failed"', "color:red;");
+        console.log('%c"failed " - Перечитайте інструкцію ще раз', "color:red;");
         console.log("%c----------------------------------------------------------", "color:yellow;");
     }
 }
@@ -162,4 +162,5 @@ triangle(30, "leg", 18, "hypotenuse");
 triangle(14, "leg", 95, "adjacent angle");
 triangle(5, "leg", 180, "opposite angle");
 triangle(10, "hypotenuse", 90, "angle");
+
 
