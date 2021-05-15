@@ -24,15 +24,13 @@ function console_result(a, b, c, alpha, beta) {
     console.log("alpha = " + alpha);
     console.log("beta = " + beta);
     console.log('%c"success"', "color:green;");
-    console.log("");
-
 }
 
 function triangle(value_1, type_1, value_2, type_2) {
     let a, b, c, alpha, beta;
     if (value_1 <= 0 || value_2 <= 0) {
         console.log('%c"Zero or negative input"', "color:aqua;");
-        console.log("%c----------------------------------------------------------", "color:orange;");
+        console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 === "leg" && type_2 === "leg") {
         a = value_1;
         b = value_2;
@@ -41,7 +39,7 @@ function triangle(value_1, type_1, value_2, type_2) {
         beta = radian_to_degrees(Math.atan(b / a));
         console.log('%cДва катети', "color:deeppink;");
         console_result(a, b, c, alpha, beta);
-        console.log("%c----------------------------------------------------------", "color:orange;");
+        console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 === "leg" && type_2 === "hypotenuse") {
         if (value_1 > value_2) {
             console.log("%cКатет більший за гіпотенузу", "color:red;")
@@ -65,7 +63,7 @@ function triangle(value_1, type_1, value_2, type_2) {
                 console_result(a, b, c, alpha, beta);
             }
         }
-        console.log("%c----------------------------------------------------------", "color:orange;");
+        console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 === "leg" && type_2 === "adjacent angle") {
         if (value_2 >= 90) {
             console.log("%cНегострі кути", "color:red;")
@@ -89,7 +87,7 @@ function triangle(value_1, type_1, value_2, type_2) {
                 console_result(a, b, c, alpha, beta);
             }
         }
-        console.log("%c----------------------------------------------------------", "color:orange;");
+        console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 === "leg" && type_2 === "opposite angle") {
         if (value_2 >= 90) {
             console.log("%cНегострі кути", "color:red;")
@@ -113,7 +111,7 @@ function triangle(value_1, type_1, value_2, type_2) {
                 console_result(a, b, c, alpha, beta);
             }
         }
-        console.log("%c----------------------------------------------------------", "color:orange;");
+        console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 === "hypotenuse" && type_2 === "angle") {
         if (value_2 >= 90) {
             console.log("%cНегострі кути", "color:red;")
@@ -138,11 +136,11 @@ function triangle(value_1, type_1, value_2, type_2) {
                 console_result(a, b, c, alpha, beta);
             }
         }
-        console.log("%c----------------------------------------------------------", "color:orange;");
+        console.log("%c----------------------------------------------------------", "color:yellow;");
     } else if (type_1 !== "leg" || type_1 !== "hypotenuse" || type_1 !== "adjacent angle" || type_1 !== "opposite angle" || type_1 !== "angle" ||
         type_2 !== "leg" || type_2 !== "hypotenuse" || type_2 !== "adjacent angle" || type_2 !== "opposite angle" || type_2 !== "angle") {
         console.log('%c"failed"', "color:red;");
-        console.log("%c----------------------------------------------------------", "color:orange;");
+        console.log("%c----------------------------------------------------------", "color:yellow;");
     }
 }
 
