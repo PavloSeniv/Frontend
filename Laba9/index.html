@@ -8,14 +8,16 @@
     <title>Laba__9</title>
     <link rel="stylesheet" href="bootstrap-5.0.1/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="container-fluid p-0">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-info bg-gradient">
-            <div class="container p-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-info bg-gradient">
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -24,8 +26,8 @@
                 <a class="navbar-brand" href="index.html">Laba9</a>
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="$ns.loadCatalogCategories();">Home</a>
+                        <li class="nav-item text-center">
+                            <a class="nav-link " href="#" onclick="$ns.loadHome();">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" onclick="$ns.loadCatalogCategories();">Category</a>
@@ -38,18 +40,15 @@
 
     <section id="Main__Home"></section>
 
-    <section id="Category"></section>
-
-    <section id="Product"></section>
-
-    <section id="Special"></section>
-
 </div>
 
 <script src="bootstrap-5.0.1/js/bootstrap.bundle.js"></script>
 <script src="js/Ajax__Utils.js"></script>
 <!--
 <script src="js/Old__File/load-html-content.js"></script>
+-->
+<!--
+<script src="js/Old__File/Ajax__Load_Catalog_Home.js"></script>
 -->
 <script src="js/Ajax__Load.js"></script>
 <script src="js/Hide__Menu.js"></script>

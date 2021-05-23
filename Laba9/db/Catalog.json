@@ -3,42 +3,42 @@
     "id": 1,
     "short_name": "A",
     "name": "Category-1",
-    "special-instructions": "Some important info",
-    "url": "DB/categories/A.json"
+    "special_instructions": "Some important info",
+    "url": "db/categories/A/A.json"
   },
   {
     "id": 2,
     "short_name": "B",
     "name": "Category-2",
-    "special-instructions": "Some important info",
-    "url": "DB/categories/B.json"
+    "special_instructions": "Some important info",
+    "url": "db/categories/B/B.json"
   },
   {
     "id": 3,
-    "short_name": "B",
+    "short_name": "C",
     "name": "Category-3",
-    "special-instructions": "Some important info",
-    "url": "DB/categories/C.json"
+    "special_instructions": "Some important info",
+    "url": "db/categories/C/C.json"
   },
   {
     "id": 4,
-    "short_name": "C",
+    "short_name": "D",
     "name": "Category-4",
-    "special-instructions": "Some important info",
-    "url": "DB/categories/D.json"
+    "special_instructions": "Some important info",
+    "url": "db/categories/D/D.json"
   },
   {
     "id": 5,
-    "short_name": "D",
+    "short_name": "E",
     "name": "Category-5",
-    "special-instructions": "Some important info",
-    "url": "DB/categories/E.json"
+    "special_instructions": "Some important info",
+    "url": "db/categories/E/E.json"
   },
   {
     "id": 6,
     "short_name": "F",
     "name": "Category-6",
-    "special-instructions": "Some important info",
-    "url": "DB/categories/F.json"
+    "special_instructions": "Some important info",
+    "url": "db/categories/F/F.json"
   }
 ]
