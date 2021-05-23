@@ -1,3 +1,7 @@
 .text__justify {
     text-align: justify;
 }
+
+.loader__position {
+    margin: 480px auto;
+}

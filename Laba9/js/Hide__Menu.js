@@ -1,3 +1,5 @@
+//При втраті фокусу  із меню воно згортається
+
 document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector(".navbar-toggler").addEventListener("blur", //Втрата фокуса на об'єкті
