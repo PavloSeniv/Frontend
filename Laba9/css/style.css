@@ -71,6 +71,9 @@
         width: auto;
     }
 
+    .row {
+        --bs-gutter-x: 0;
+    }
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -85,4 +88,6 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: #f00d42;
 }
+
+
 
