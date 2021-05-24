@@ -222,6 +222,18 @@
             }
         };
 
+        //Завантаження випадкової категорії з товарами
+        ns.loadSpecials = function (categoryShort) {
+            showLoading("#Main__Home");
+            /*
+            var categoriesJSON = ["A", "B", "C", "D", "E", "F"];
+                        var randCategory = Math.floor(Math.random() * categoriesJSON.length);
+                        // Повертається число тобто 0,1,2...5
+            */
+            var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
+            $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
+        };
+
         global.$ns = ns;
 
     }
